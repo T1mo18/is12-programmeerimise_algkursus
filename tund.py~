@@ -1,0 +1,8 @@
+klass = (...)
+
+print klass
+
+del klass [n]
+
+
+print klass
