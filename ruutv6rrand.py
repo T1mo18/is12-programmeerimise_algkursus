@@ -1,20 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-def keskmine():
-    esimene=(raw_input("Sisesta esimene arv: "))
-    if esimene=="":
-        print "Ei sisestatud esimest arvu"
-        return keskmine()
-    teine=int(raw_input("Sisesta teine arv: "))
-    if teine=="":
-        print "Ei sisestatud teist arvu"
-        return keskmine()
-    summa = float(int(esimene)+int(teine))
-    b=float(int(summa)/2.0)
-    print ("Nende arvude keskmine on "+str(b))
-
-    print "___________________________________________________________________"
-
 
 
 
@@ -27,6 +12,9 @@ def fjada():
 
 
     print "____________________________________________________________________"   
+
+
+
 
 def ruutfunktsioon():
     print "Ruutfunktsioon \nax(ruut)+bx+c=0\nAnna väärtused a-le, b-le ja c-le\n Teile kuvatakse ruutfunktsioon koos vastustega"
@@ -49,6 +37,31 @@ def ruutfunktsioon():
         x1=round(float(x1)/float(aa),2)
         x2=round(float(x2)/float(aa),2)
         print "Ruutfunktsiooni lahendid on:"+str(x1)+" ja "+str(x2)
+
+
+
+
+
+def keskmine():
+    esimene=(raw_input("Sisesta esimene arv: "))
+    if esimene=="":
+        print "Ei sisestatud esimest arvu"
+        return keskmine()
+    teine=int(raw_input("Sisesta teine arv: "))
+    if teine=="":
+        print "Ei sisestatud teist arvu"
+        return keskmine()
+    summa = float(int(esimene)+int(teine))
+    b=float(int(summa)/2.0)
+    print ("Nende arvude keskmine on "+str(b))
+
+    print "___________________________________________________________________"
+
+
+
+
+
+
 
 
 fjada()
