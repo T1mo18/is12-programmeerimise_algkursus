@@ -19,9 +19,9 @@ def fjada():
 def ruutfunktsioon():
     print "Ruutfunktsioon \nax(ruut)+bx+c=0\nAnna väärtused a-le, b-le ja c-le\n Teile kuvatakse ruutfunktsioon koos vastustega"
     print"______________________________________________________________________"
-    a=raw_input("Sisesta a väärtus, arvu ette kas +või-:")
-    b=raw_input("Sisesta b väärtus, arvu ette kas +või-:")
-    c=raw_input("Sisesta c väärtus, arvu ette kas +või-:")
+    a=raw_input("Sisesta a)
+    b=raw_input("Sisesta b)
+    c=raw_input("Sisesta c)
     print"______________________________________________________________________"
     print 'Te sisestasite ruutfunktsiooni mis näeb välja nii, ' +a+'x(ruut)'+b+'x'+c+'=0'
     juur=((int(b)*int(b))-4*(int(a)*int(c)))
