@@ -50,6 +50,7 @@ def ruutfunktsioon():
         x2=round(float(x2)/float(aa),2)
         print "Ruutfunktsiooni lahendid on:"+str(x1)+" ja "+str(x2)
 
-ruutfunktsioon()
+
 fjada()
+ruutfunktsioon()
 keskmine()
