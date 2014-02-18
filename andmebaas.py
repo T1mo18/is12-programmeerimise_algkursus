@@ -1,21 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 import sys
 
-
-
-print "add- lisab andmebaasi masiivi"
-print "rm- eemaldab masiivist teatud rea"
-print "ls- kuvatakse andmebaas"
-print "q- lahkuge andmebaasist"
+print "append-Andmebaasi kirje lisamine"
+print "remove-Andmebaasist kirje eemaldamine "
+print "list-Andmebaas"
+print "quit-Andmebaasist väljumine"
 print " "
 sisestus= raw_input("valige endale sobiv varjant: ")
 
 
 joogid= [
-
-
-['Õlu', 'Heineken', '0.3'],
+['6lu', 'Heineken', '0.3'],
 ['Vein', 'Old Tbilisi', '1.0'],
 ['Viin', 'Viru Valge', '1.0'],
 ['Viski', 'Jack Daniels', '0.7'],
@@ -24,23 +21,30 @@ joogid= [
 
 x=len(joogid)
 
+def list():
+	if sisestus=='list':
+is12-programmeerimise_algkursus /   or cancel
+CodePreview   
 
-def add():
-	if sisestus=='add':
-		joogid.insert(x,[raw_input("Sisestage jook: "), raw_input("Sisestage joogi mark: "), raw_input("Sisestage pudeli suurus: ")]) 
+		print joogid
+list()	
 
-add()
 
-def rm():
-	if sisestus=='rm':
+
+def remove():
+	if sisestus=='remove':
 		print joogid
 		joogid.pop(int(raw_input("sisestage number 0-..., et mõni automark eemaldada: ")))
-rm()
+remove()
 
-def ls():
-	if sisestus=='ls':
-		print joogid
-ls()		
+	
+
+def append():
+	if sisestus=='append':
+		joogid.insert(x,[raw_input("Sisestage jook: "), raw_input("Sisestage joogi mark: "), raw_input("Sisestage pudeli suurus: ")]) 
+append()
+
+
 
 def quit():
 	if sisestus=='q':
