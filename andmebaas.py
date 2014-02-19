@@ -23,8 +23,7 @@ x=len(joogid)
 
 def list():
 	if sisestus=='list':
-is12-programmeerimise_algkursus /   or cancel
-CodePreview   
+
 
 		print joogid
 list()	
@@ -47,6 +46,6 @@ append()
 
 
 def quit():
-	if sisestus=='q':
+	if sisestus=='quit':
 		sys.exit(0)
 quit()
