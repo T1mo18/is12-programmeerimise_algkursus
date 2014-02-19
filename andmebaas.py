@@ -1,15 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import sys
-
-print "append-Andmebaasi kirje lisamine"
-print "remove-Andmebaasist kirje eemaldamine "
-print "list-Andmebaas"
-print "quit-Andmebaasist väljumine"
-print " "
-sisestus= raw_input("valige endale sobiv varjant: ")
-
 
 joogid= [
 ['6lu', 'Heineken', '0.3'],
@@ -22,30 +13,39 @@ joogid= [
 x=len(joogid)
 
 def list():
-	if sisestus=='list':
-
-
 		print joogid
-list()	
-
-
-
+	
 def remove():
-	if sisestus=='remove':
 		print joogid
 		joogid.pop(int(raw_input("sisestage number 0-..., et mõni automark eemaldada: ")))
-remove()
-
-	
+		print joogid
 
 def append():
-	if sisestus=='append':
 		joogid.insert(x,[raw_input("Sisestage jook: "), raw_input("Sisestage joogi mark: "), raw_input("Sisestage pudeli suurus: ")]) 
-append()
-
-
+		print joogid
 
 def quit():
-	if sisestus=='quit':
 		sys.exit(0)
-quit()
+
+
+while True:
+		print " "
+		print "append-Andmebaasi kirje lisamine"
+		print "remove-Andmebaasist kirje eemaldamine "
+		print "list-Andmebaas"
+		print "quit-Andmebaasist väljumine"
+		print " "
+		
+		sisestus= raw_input("valige endale sobiv varjant: ")
+		
+		if sisestus=="append":
+			append()
+		elif sisestus=="remove":
+			remove()
+		elif sisestus=="list":
+			list()
+		elif sisestus=="quit":
+			quit()
+		else: 
+			print "Vale sisestus, proovige uuesti!"
+			
